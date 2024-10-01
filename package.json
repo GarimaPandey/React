@@ -1,0 +1,29 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is a react project by Garima pandey",
+  "main": "App.js",
+  "scripts": {
+    "start":"parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarimaPandey/React.git"
+  },
+  "keywords": [
+    "react",
+    "project",
+    "garimapandey"
+  ],
+  "author": "Garima Pandey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GarimaPandey/React/issues"
+  },
+  "homepage": "https://github.com/GarimaPandey/React#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

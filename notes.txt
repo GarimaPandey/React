@@ -1,0 +1,90 @@
+
+React Element is an object rendered to the dom element.
+
+when it renders into the dom it converts itself into html and render to the dom
+
+
+npm
+-manages packages
+
+it manages lots of packages from node but it does not stands
+ for node package manager
+
+
+include node packages:
+
+npm init
+-
+define details for package.json
+
+
+package.json
+- configuration for our npm
+^-minor updates
+~- major updatesv
+
+
+bundler
+- bundlers like vite,parcel uses webpacks which helps to bundle 
+the application and minify its big files before we push to prodyction
+
+
+parcel
+- dev build
+- run server
+- HMR Hot Module Replacement
+- uses a File Watching algorithm written in C++
+- parcel has its own cache, parcel-cache
+- image optimization
+- minify files for production
+- compress and pack all js files and ship it for production and deployement
+- tree shaking (removes unused code)
+- different dev and production bundlers
+- using browserslist :["Last two Chrome versions"], i can decide 
+
+
+
+
+
+
+parcel command
+npm install -D parcel
+D here means dev dependency and not normal dependency as we are using for local development and not production
+
+
+
+Always push package.json and package-lock.json to github to keep a record of your dependency for production
+
+this can help you recreate the dependencies for you
+
+you don't need to push node modules as it will recreate it in production using package.json
+
+-
+.gitignore contains all the files which does not need to push it to git
+
+
+ignite your app:
+-npx parcel index.html
+to execute a package use "npx"
+
+
+command to build production
+npx parcel build index.html
+(remove main:"App.js" from package.json so parcel does not have confusion with application's entry point)
+
+
+npx parcel index.html
+npx - npm package is being executed
+using parcel package
+where index.html is the source file
+
+npm i , i is a shortform to npm install
+
+
+
+
+
+- jsx looks like html syntax
+-  so what ever code we ewrite in html and render it to reactDom ,it is transpiled by parcel using babel
+- BABEL IS  A POWERFUL TOOL USED BY PARCEL, which converts jsx to react.createElement, its a js compiler
+

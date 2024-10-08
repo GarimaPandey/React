@@ -1,4 +1,6 @@
 
+
+
 .header{
     display:flex;
     justify-content: space-between;
@@ -14,27 +16,29 @@
 
 .restaurant-container{
     display:flex;
+    flex-shrink: inherit;
+    flex-wrap: wrap;
     flex-direction:row;
-    flex-wrap:wrap-reverse;
     align-items:center;
     justify-content: flex-start;
-    padding:10px;
+ 
 }
 
 .res-card{
-    margin: 30px;
+    margin: 10px;
     width: 250px;
-    height:380px;
+    height:450px;
     text-align: center;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 15%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+    border:black solid 1px;
+    /* border-radius: 15%; */
+    transition: transform 0.12s ease, box-shadow 0.3s ease; /* Smooth animation */
     
 }
 
 
 .res-card:hover {
-    transform: translateY(-10px); /* Lifts the card up by 10px */
+    transform: translateY(-30px); /* Lifts the card up by 10px */
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3); /* Add a stronger shadow */
     z-index: 10; /* Puts the card on top of others */
   }
@@ -44,6 +48,7 @@
 }
 
 .res-logo{
+    margin:20px;
     width:150px;
 }
 
@@ -58,7 +63,7 @@
 }
 
 .search {
-    padding: 10px;
+    margin: 20px;
 }
 
 .res-logo {
@@ -66,6 +71,35 @@
 }
 
 .filter-btn{
-    margin:10px;
+    margin-top:40px;
     cursor:pointer;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card {
+    margin:10px;
+    width:200px;
+    height:400px;
+    background-color: #F0F0F0;
+}
+
+
+.login{
+    margin:10px;
+    padding:5px;
+    width:120px;
+    height:60px;
+}
+
+.filter-btn{
+    margin:10px;
+    height :50px;
+    width:130px;
+}
+
+.filter{
+    display: flex;
 }
